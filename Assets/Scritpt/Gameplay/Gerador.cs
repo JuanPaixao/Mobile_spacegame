@@ -15,15 +15,14 @@ public class Gerador : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("Instanciar", 0, tempo);
+        InvokeRepeating("Instanciar", 0, this.tempo);
     }
 
     private void Instanciar()
     {
-        if (_enemiesBackup.HasEnemy())
+        if (this._enemiesBackup.HasEnemy())
         {
             GameObject inimigo = this._enemiesBackup.ActiveEnemy();
-            inimigo.SetActive(true);
             this.DefinirPosicaoInimigo(inimigo);
             inimigo.GetComponent<FollowPlayer>().SetTarget(this._target);
             inimigo.GetComponent<Scoreable>().SetScore(this._score);

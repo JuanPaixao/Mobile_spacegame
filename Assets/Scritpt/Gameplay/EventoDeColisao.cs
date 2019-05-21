@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EventoDeColisao : MonoBehaviour {
+public class EventoDeColisao : MonoBehaviour
+{
 
     [SerializeField]
     private UnityEvent aoBater;
@@ -11,6 +12,6 @@ public class EventoDeColisao : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         this.aoBater.Invoke();
-        GameObject.Destroy(this.gameObject);
+        //  GameObject.Destroy(this.gameObject);
     }
 }
