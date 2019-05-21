@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Gerador : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject prefabInimigo;
+    // [SerializeField]
+    // private GameObject prefabInimigo;
     [SerializeField]
     private float tempo;
     [SerializeField]
     private float raio;
     [SerializeField] private Transform _target;
     [SerializeField] private int _score;
+    [SerializeField] private EnemiesBackup _enemiesBackup;
 
     private void Start()
     {
@@ -19,10 +20,14 @@ public class Gerador : MonoBehaviour
 
     private void Instanciar()
     {
-        var inimigo = GameObject.Instantiate(this.prefabInimigo);
-        this.DefinirPosicaoInimigo(inimigo);
-        inimigo.GetComponent<FollowPlayer>().SetTarget(this._target);
-        inimigo.GetComponent<Scoreable>().SetScore(this._score);
+        if (_enemiesBackup.HasEnemy())
+        {
+            GameObject inimigo = this._enemiesBackup.ActiveEnemy();
+            inimigo.SetActive(true);
+            this.DefinirPosicaoInimigo(inimigo);
+            inimigo.GetComponent<FollowPlayer>().SetTarget(this._target);
+            inimigo.GetComponent<Scoreable>().SetScore(this._score);
+        }
     }
 
     private void DefinirPosicaoInimigo(GameObject inimigo)
