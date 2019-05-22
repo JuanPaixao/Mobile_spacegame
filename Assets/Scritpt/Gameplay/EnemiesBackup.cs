@@ -29,7 +29,6 @@ public class EnemiesBackup : MonoBehaviour
         GameObject enemy = this._enemiesStack.Pop();
         enemy.SetActive(true);
         return enemy; //pick the first object on my stack and return it
-        Debug.Log("test");
     }
     public void ReturnEnemy(GameObject enemy)
     {

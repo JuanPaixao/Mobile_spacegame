@@ -257,7 +257,7 @@ GameObject:
   m_Layer: 0
   m_Name: GeradorDeInimigos
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -269,7 +269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563932336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.95, y: -0.62, z: 0}
+  m_LocalPosition: {x: -12.72, y: -3.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -288,7 +288,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 1
-  raio: 3
+  _area:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 3
+    height: 7.67
   _target: {fileID: 1164732313}
   _score: 5
   _enemiesBackup: {fileID: 1161527770}
@@ -485,7 +490,8 @@ AudioSource:
   m_GameObject: {fileID: 956519201}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5930443097142234811, guid: ac9305f86fdd899488970ce249562e78,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: e8ed32b4a92df764583fd733549ac839, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -757,7 +763,7 @@ GameObject:
   m_Layer: 0
   m_Name: GeradorDeInimigos
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -774,7 +780,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 1
-  raio: 3
+  _area:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 16.3
+    height: 3
   _target: {fileID: 1164732313}
   _score: 5
   _enemiesBackup: {fileID: 1161527770}
@@ -786,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028723153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 8, z: 0}
+  m_LocalPosition: {x: -8.23, y: 5.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1035,6 +1046,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1730725135}
         m_MethodName: UpdateScore
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 956519202}
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1529,7 +1551,7 @@ GameObject:
   m_Layer: 0
   m_Name: GeradorDeInimigos
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1546,7 +1568,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 1
-  raio: 3
+  _area:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 3
+    height: 7.73
   _target: {fileID: 1164732313}
   _score: 5
   _enemiesBackup: {fileID: 1161527770}
@@ -1558,7 +1585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882994926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.72, y: -0.19, z: 0}
+  m_LocalPosition: {x: 9.13, y: -3.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
