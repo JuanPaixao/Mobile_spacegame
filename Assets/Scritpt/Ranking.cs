@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO; //to use file methods
 using System.Collections.ObjectModel;
-using System;
+using System; // to use GUID
 public class Ranking : MonoBehaviour
 {
     private static string FILE_NAME = "Ranking.json"; //json to store my savedata
