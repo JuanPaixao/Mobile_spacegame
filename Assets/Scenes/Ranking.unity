@@ -1009,7 +1009,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: John Smith
+  m_Text: Enter your name...
 --- !u!222 &1121538583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1308,6 +1308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 1699952964}
+  _nameText: {fileID: 55671132}
   _ranking: {fileID: 1644640112}
 --- !u!1 &1723791222
 GameObject:

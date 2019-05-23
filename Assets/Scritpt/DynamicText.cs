@@ -6,11 +6,11 @@ public class DynamicText : MonoBehaviour
 {
     [SerializeField] private Text _text;
 
-    public void UpdateScore(int score)
+    public void UpdateText(int score)
     {
         this._text.text = score.ToString();
     }
-    public void UpdateScore(string newText)
+    public void UpdateText(string newText)
     {
         this._text.text = newText; //sobrecarga
     }

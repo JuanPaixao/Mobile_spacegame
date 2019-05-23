@@ -1427,7 +1427,7 @@ GameObject:
   m_TagString: Trilha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!82 &1495033869
 AudioSource:
@@ -1552,6 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c75a9da00d87604988c5acb5a054233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _overrideExistentInstance: 0
 --- !u!114 &1495033872
 MonoBehaviour:
   m_ObjectHideFlags: 0

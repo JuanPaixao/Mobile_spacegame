@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UniqueInstance : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private bool _overrideExistentInstance;
     void Start()
     {
         GameObject[] otherInstance = GameObject.FindGameObjectsWithTag(this.tag);
@@ -12,7 +12,14 @@ public class UniqueInstance : MonoBehaviour
         {
             if (instance != this.gameObject)
             {
-                Destroy(instance);
+                if (_overrideExistentInstance)
+                {
+                    GameObject.Destroy(instance);
+                }
+                else
+                {
+                    GameObject.Destroy(this.gameObject);
+                }
             }
         }
     }
